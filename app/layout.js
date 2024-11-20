@@ -9,10 +9,10 @@ const opensans = Open_Sans({ subsets: ["latin"] });
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
-  title: "Broodl",
-  description: "Track your daily mood every day of the year!",
+  title: "AuraTrack",
+  description: "Track your daily aura every day of the year!",
 };
-
+  
 export default function RootLayout({ children }) {
   const header = (
     <header className="p-4 sm:p-8 flex items-center justify-between gap-4">
@@ -26,10 +26,10 @@ export default function RootLayout({ children }) {
   const footer = (
     <footer className="p-4 sm:p-8 grid place-items-center">
       <Link href={'https://youtu.be/lkjrUW8fI40'} target="_blank" className="">
-        <p className={'text-indigo-500 duration-200 hover:text-white hover:bg-indigo-500 ' + fugaz.className}>Built by Aur-aplus </p>
+        <p className={'text-indigo-500 duration-200 hover:text-white hover:bg-indigo-500 ' + fugaz.className}>Built by Aura-aplus </p>
         
       </Link>
-      <h3 className="pt-[24px] text-center text-[14px] text-slate-800 font-medium">&copy; 2024 AuraTracker. All rights reserved.</h3>
+      <h3 className="pt-[24px] text-center text-[14px] text-slate-800 font-medium">&copy; 2024 AuraTrack. All rights reserved.</h3>
     </footer>
   )
 
