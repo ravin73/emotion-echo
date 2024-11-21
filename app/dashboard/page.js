@@ -1,26 +1,19 @@
 
 import Dashboard from "@/components/Dashboard";
+import Loading from "@/components/Loading";
 import Login from "@/components/Login";
 import Main from "@/components/Main";
+import { useAuth } from "@/context/AuthContext";
 
-export const metadata = {
-    title: "AuraTrack ⋅ dashboard",
+// export const metadata = {
+//     title: "AuraTrack ⋅ dashboard",
+
+// };
+export default function DashboardPage() {
    
-  };
-export default function DashboardPage(){
-    const isAuthenticated = true;
-
-    let children=(
-        <Login/>
-    )
-    if(isAuthenticated){
-        children=(
-            <Dashboard/>
-        )
-    }
-    return(
+    return (
         <Main>
-            {children}
+           <Dashboard/>
         </Main>
     )
 }
